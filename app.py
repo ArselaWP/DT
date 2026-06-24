@@ -1,12 +1,12 @@
 import pandas as pd
 import os
 
-# Gunakan path relatif
-data_path = os.path.join(os.path.dirname(__file__), 'outputs', 'food_consumption_clustered_for_dashboard.csv')
+# Gunakan cara ini agar path-nya selalu benar di mana pun dijalankan
+file_path = 'outputs/food_consumption_clustered_for_dashboard.csv'
 
-# Cek apakah file ada sebelum dibaca
-if os.path.exists(data_path):
-    df = pd.read_csv(data_path)
-else:
-    st.error(f"File tidak ditemukan di: {data_path}")
-    # Opsi lain: tampilkan pesan error yang lebih informatif
+try:
+    df = pd.read_csv(file_path)
+    # Tampilkan sesuatu di layar agar kita tahu data sudah terbaca
+    st.write("Data berhasil dimuat!") 
+except FileNotFoundError:
+    st.error(f"File tidak ditemukan di path: {os.path.abspath(file_path)}")
