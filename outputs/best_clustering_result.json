@@ -1,0 +1,14 @@
+{
+  "feature_set_name": "economic_core",
+  "features": [
+    "income_million_idr",
+    "expenditure_million_idr",
+    "food_expenditure_pct",
+    "social_class_score"
+  ],
+  "k": 3,
+  "silhouette": 0.6972175883617607,
+  "pca_explained_total": 0.9491153344409554,
+  "pca_explained_pc1": 0.8894526881609637,
+  "pca_explained_pc2": 0.059662646279991766
+}

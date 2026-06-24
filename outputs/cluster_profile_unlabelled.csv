@@ -1,0 +1,4 @@
+cluster,count,income_million_idr,expenditure_million_idr,food_expenditure_pct,social_class_score,PC1,PC2
+1,247,5.877,5.647,39.579,2.004,-0.095,0.209
+2,256,3.323,3.086,61.926,1.113,-1.997,-0.141
+3,207,11.778,11.543,23.652,2.908,2.583,-0.074

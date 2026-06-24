@@ -11,6 +11,3 @@ env/
 # Ide / Editor
 .vscode/
 .idea/
-
-# Data / Logs
-outputs/
