@@ -1,3 +1,19 @@
+import streamlit as st
+import pandas as pd
+import os
+
+# Dapatkan lokasi folder file app.py saat ini
+base_path = os.path.dirname(__file__)
+# Gabungkan dengan nama folder dan file
+file_path = os.path.join(base_path, 'outputs', 'food_consumption_clustered_for_dashboard.csv')
+
+try:
+    df = pd.read_csv(file_path)
+    # Lanjutkan kode dashboard kamu di sini...
+    st.write("Data berhasil dimuat!")
+except FileNotFoundError:
+    st.error(f"File tidak ditemukan di path: {file_path}")
+    
 from pathlib import Path
 
 import pandas as pd
